@@ -1,0 +1,114 @@
+:root {
+
+}
+
+html {
+    font-family: "Inconsolata", sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.nav-item {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.slide {
+    height: 560px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide img{
+    height: 560px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.part {
+    max-width: 700px;
+}
+
+.text-space {
+    letter-spacing: 2px;
+}
+
+.heading {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.note {
+    background-color: #f1f1f1;
+    border-left: 6px solid #ccc;
+}
+
+.img-about {
+    height: 400px;
+}
+
+.img-about img {
+    width: 100%;
+    height: 400px;
+}
+
+.menu {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.select:hover {
+    background-color: #616161;
+    color: #fff;
+    cursor: pointer;
+}
+
+.element-food {
+    opacity: 0.8;
+}
+
+.list-drink {
+    display: none;
+}
+
+.select-drink:hover ~ .list-drink {
+    display: block;
+}
+
+.select-drink:hover ~ .list-eat {
+    display: none;
+}
+
+.attention {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    background-color: rgb(148, 239, 130);
+}
+
+.footer a{
+    color: #000;
+}
+
+.footer a:hover{
+    color: rgb(121, 33, 235);
+}

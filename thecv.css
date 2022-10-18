@@ -1,0 +1,54 @@
+:root {
+    --main-color: #757575;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f1f1f1;
+}
+
+.exp,
+.education,
+.part-one {
+    box-shadow: 0 0 10px rgb(150, 133, 133);
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+.avatar {
+    background: url('./img/thecv-1.jpg') no-repeat center/cover;
+    padding-top: 60%;
+}
+
+.my-name {
+    font-size: 1.6rem;
+}
+
+.intro {
+    color: var(--main-color);
+}
+
+.progress {
+    background-color: #c9daeb;
+}
+
+.list-education,
+.list-exp,
+.list-language,
+.list-skill {
+    list-style: none;
+    padding: 0;
+}
+
+.btn-exp {
+    background-color: #757575;
+    color: #fff;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+
+.desc-exp {
+    color: #000;
+}
+
+

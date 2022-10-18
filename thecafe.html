@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./thecafe.css">
+    <title>The Cafe</title>
+</head>
+<body>
+    <header>
+        <div class="text-center px-4 d-flex navbar">
+            <a class="col text-uppercase py-2 nav-item" href="">home</a>
+            <a class="col text-uppercase py-2 nav-item" href="#part-1">about</a>
+            <a class="col text-uppercase py-2 nav-item" href="#part-2">menu</a>
+            <a class="col text-uppercase py-2 nav-item" href="#part-3">where</a>
+        </div>
+    </header>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./img/the-cafe-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/the-cafe-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/the-cafe-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container py-5">
+        <div class="text-center m-auto text-space part" id="part-1">
+            <h4 class="text-uppercase p-1 px-2 mt-4 heading">about the cafe</h4>
+            <div class="text-space text-start mt-5 desc">
+                The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br><br> In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+            </div>
+
+            <div class="text-space text-start py-2 px-3 mt-3 note">
+                "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet. <br><br>
+                Chef, Coffeeist and Owner: Liam Brown
+            </div>
+
+            <div class="mt-4 img-about">
+                <img src="./img/the-cafe-1.jpg" alt="">
+            </div>
+
+            <div class="text-space text-start info">
+                <p class="my-4 time-open">
+                    <span class="fw-semibold">Opening hours:</span>
+                    every from 6am to 5pm.
+                </p>
+                <p class="address">
+                    <span class="fw-semibold">Address:</span>
+                    15 Adr street, 5015, NY.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center m-auto text-space part" id="part-2">
+            <h4 class="text-uppercase p-1 px-2 mt-5 heading">The Menu</h4>
+            <div class="menu mt-5 px-4">
+                <div class="row">
+                    <div class="col-md-12 p-3 select-list">
+                        <div class="row">
+                            <div class="col-md-6 fs-5 select" onclick="open_eat()">Eat</div>
+                            <div class="col-md-6 fs-5 select select-drink" onclick="open_drink()">Drink</div>
+                        </div>
+                    </div>
+                    <ul class="col-md-12 list-unstyled pb-4 list-eat">
+                        <li class="text-start mt-5 item-eat">
+                            <h4 class=" fw-normal fs-5">Bread Basket</h4>
+                            <p class="element-food">
+                                Assortment of fresh baked fruit breads and muffins 5.50
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-eat">
+                            <h4 class=" fw-normal fs-5">Honey Almond Granola with Fruits</h4>
+                            <p class="element-food">
+                                Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-eat">
+                            <h4 class=" fw-normal fs-5">Belgian Waffle</h4>
+                            <p class="element-food">
+                                Vanilla flavored batter with malted flour 7.50
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-eat">
+                            <h4 class=" fw-normal fs-5">Scrambled eggs</h4>
+                            <p class="element-food">
+                                Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-eat">
+                            <h4 class=" fw-normal fs-5">Blueberry Pancakes</h4>
+                            <p class="element-food">
+                                With syrup, butter and lots of berries 8.50
+                            </p>
+                        </li>
+                    </ul>
+
+                    <ul class="col-md-12 list-unstyled pb-4 list-drink">
+                        <li class="text-start mt-5 item-drink">
+                            <h4 class=" fw-normal fs-5">Coffee</h4>
+                            <p class="element-food">
+                                Regular coffee 2.50
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-drink">
+                            <h4 class=" fw-normal fs-5">Chocolato</h4>
+                            <p class="element-food">
+                                Chocolate espresso with milk 4.50
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-drink">
+                            <h4 class=" fw-normal fs-5">Corretto</h4>
+                            <p class="element-food">
+                                Whiskey and coffee 5.00
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-drink">
+                            <h4 class=" fw-normal fs-5">Iced tea</h4>
+                            <p class="element-food">
+                                Hot tea, except not hot 3.00
+                            </p>
+                        </li>
+                        <li class="text-start mt-5 item-drink">
+                            <h4 class=" fw-normal fs-5">Soda</h4>
+                            <p class="element-food">
+                                Coke, Sprite, Fanta, etc. 2.50
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4 img-about">
+                <img src="./img/the-cafe-2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="text-center m-auto text-space pb-5 part" id="part-3">
+            <h4 class="text-uppercase p-1 px-2 mt-5 heading">Where to find us</h4>
+            <div class="address mt-5">
+                <p class="text-start fs-6">Find us at some address at some place</p>
+            </div>
+            <div class="mt-4 img-about">
+                <img src="./img/the-cafe-3.jpg" alt="">
+            </div>
+            <div class="text-start mt-3 address-desc">
+                <span class="text-uppercase py-1 px-2 attention">fyi!</span>
+                We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                <br><br><span class="fw-semibold">Reverse</span> a table, ask for today's special or just send us a message:
+            </div>
+
+            <form action="">
+                <input type="text" class="form-control mt-3 py-3" placeholder="Name" required id="">
+                <input type="number" class="form-control mt-3 py-3" placeholder="How many people" required id="">
+                <input type="datetime-local" class="form-control mt-3 py-3" value="2022-10-19T19:10" required id="">
+                <input type="message" class="form-control mt-3 py-3" placeholder="Message / Special requirements" required id="">
+            </form>
+
+            <butoon class="btn btn-dark text-uppercase mt-3 float-start">Submit</butoon>
+        </div>
+    </div>
+    <div class="py-5 text-center footer">Power by <a href="https://vlogtruyen.net/" class="text-decoration-none">kain</a></div>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
