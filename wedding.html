@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="wedding.css">
+    <title>Wedding</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="row text-center g-0 nav-bar">
+                <div class="col-md-3 nav-item">Home</div>
+                <div class="col-md-3 nav-item">Jane&John</div>
+                <div class="col-md-3 nav-item">Wedding</div>
+                <div class="col-md-3 nav-item">RSVP</div>
+            </div>
+
+            <div class="header-info text-center">
+                <h1 style="font-size: 68px;">Jane & John</h1>
+                <h3 style="font-size: 32px;">Are getting married</h3>
+                <h4 style="font-size: 24px;">17.07.2017</h4>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="couple">
+                <div class="row">
+                    <h1 class="heading">Jane&John</h1>
+                </div>
+
+                <img src="./img/wedding_couple2.jpg" alt="" class="couple-img">
+                
+                <p class="couple-text text-justify fst-italic mx-3 pt-4">
+                    You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <div class="text-center">
+                    <div class="btn btn-dark couple-btn">Wedding details</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="couple-after-img text-center">
+
+            <div class="couple-after-text">
+                <h1 style="font-size: 68px;">You are invited</h1>
+                <h3 style="font-size: 32px; margin-top: 30px;">Of course..........</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wedding">
+                <div class="row">
+                    <h1 class="heading">THE WEDDING</h1>
+                </div>
+
+                <img src="./img/wedding_location.jpg" alt="" class="couple-img">
+
+                <div class="row wedding-info">
+                    <div class="col-md-6 text-center">
+                        <h1 class="wedding-heading">When</h1>
+
+                        <ul class="wedding-list list-unstyled">
+                            <li>Wedding Ceremony - 2:00pm</li>
+                            <li>Reception & Dinner - 5:00pm</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <h1 class="wedding-heading">Where</h1>
+
+                        <ul class="wedding-list list-unstyled">
+                            <li>Some place, an address</li>
+                            <li>Some where, some address</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guestbook text-center">
+                <h1 class="guestbook-heading">
+                    HOPE YOU CAN MAKE IT!
+                </h1>
+
+                <h3 class="guestbook-time">
+                    Kindly Respond By January, 2017
+                </h3>
+
+                <button class="rsvp-btn js-rsvp-btn">
+                    RSVP
+                </button>
+            </div>
+        </div>
+
+        <div class="footer text-center">
+            Power by <a href="" class="text-decoration-none" style="color: #fff;">kain</a>
+        </div>
+    </div>
+
+
+    <div class="modal-form">
+        <div class="form-message text-center">
+            <h1 class="form-heading">CAN YOU COME?</h1>
+            <h3 class="form-subheading">We really hope you can make it.</h3>
+            <input type="text" name="" id="" placeholder="Name(s)">
+            <h3 class="author">Sincerely, John & Jane</h3>
+            <div class="row">
+                <div class="col form-btn going">Going</div>
+                <div class="col form-btn cant-come">Can't Come</div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script>
+        var rsvpBtn = document.querySelector('.js-rsvp-btn')
+        var modal = document.querySelector('.modal-form')
+        function showModal() {
+            modal.style.display = 'block'
+        }
+        
+        rsvpBtn.addEventListener("click", showModal)
+        var formBtns = document.querySelectorAll('.form-btn')
+
+        function hiddenModal() {
+            modal.style.display = 'none'
+        }
+        for(var formBtn of formBtns) {
+            formBtn.addEventListener("click", hiddenModal)
+        }
+        
+    </script>
+</body>
+</html>

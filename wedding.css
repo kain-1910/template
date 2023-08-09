@@ -1,0 +1,197 @@
+html, body {
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+}
+
+
+body {
+    background-color: #ffdddd !important;
+}
+
+header {
+    background: url('./img/wedding_couple.jpg') no-repeat center/cover;
+    padding-top: 66.7%;
+    position: relative;
+}
+
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    z-index: 10;
+}
+
+.nav-item {
+    padding-block: 10px;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    background-color: #ccc;
+}
+
+.header-info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.header-info > * {
+    letter-spacing: 4px;
+
+}
+
+.heading {
+    color: #757575;
+    letter-spacing: 2px;
+    font-size: 36px;
+    text-align: center;
+    margin-block: 36px;
+}
+
+.couple-img {
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.couple-btn {
+    padding: 12px;
+    background-color: #000;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-block: 30px;
+}
+
+.couple-after-img {
+    background: url('./img/flowers.jpg') no-repeat center/cover;
+    padding-bottom: 66.7%;
+    position: relative;
+}
+
+.couple-after-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.wedding-info {
+    margin-top: 60px;
+    padding-bottom: 160px;
+}
+
+.wedding-heading {
+    font-size: 26px;
+}
+
+.wedding-list > * {
+    font-size: 15px;
+    margin-block: 20px;
+}
+
+.guestbook {
+    padding-bottom: 100px;
+}
+
+.guestbook-heading {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.guestbook-time {
+    font-size: 20px;
+    margin-block: 20px
+}
+
+.rsvp-btn {
+    border: none;
+    padding: 10px 60px;
+    background-color: rgb(255 0 0 / 80%);
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.rsvp-btn:hover {
+    background-color: rgb(255 0 0 / 60%);
+}
+
+.footer {
+    background-color: #000;
+    padding: 50px;
+    color: #fff;
+}
+
+.modal-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.form-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 30px 60px;
+    /* animation: Zoom ease-in 0.3s; */
+}
+
+.form-message > * {
+    margin-block: 16px;
+}
+
+.form-heading {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.form-subheading {
+    font-size: 20px;
+}
+
+.form-message input {
+    min-width: 100%;
+    padding: 4px 6px;
+    outline: none;
+}
+
+.author {
+    font-size: 16px;
+}
+
+.form-btn {
+    margin-top: 10px;
+    color: #fff;
+    padding: 6px;
+}
+
+.form-btn.going {
+    background-color: #4CAF50;
+}
+
+.form-btn.cant-come {
+    background-color: #f44336;
+}
+
+
+
+
+
+
+
+

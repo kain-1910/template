@@ -1,0 +1,138 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.category {
+    width: 300px;
+    /* position: fixed;
+    top: 0;
+    bottom: 0; */
+    background-color: #fff;
+}
+
+.content {
+    flex: 1;
+    padding-bottom: 300px;
+}
+
+.option-item-child,
+.option-item {
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-block: 4px;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+.selecting {
+    color: #000;
+}
+
+.option-item-child:hover,
+.option-item:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.option-list-child {
+    display: none;
+    animation: FadeIn linear 0.2s;
+}
+
+.option-item-child {
+    font-size: 1rem;
+}
+
+.item-social {
+    color: #000;
+    padding-block: 4px;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+.item-social:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.slide {
+    padding-top: 50%;
+    background: url('./clothes.jpg') no-repeat center/cover;
+    position: relative;
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.img-product {
+    width: 100%;
+}
+
+.name-product {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.input-email {
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 12px;
+    margin-left: 10px;
+    padding-left: 8px;
+    padding-block: 4px;
+    margin-block: 10px;
+}
+
+.btn-input {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: unset;
+}
+
+.contact-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.info-store {
+    font-size: 0.8rem;
+    
+}
+
+.icon {
+    font-size: 0.6rem;
+    margin-right: 8px;
+}
+@keyframes FadeIn {
+    from {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1024px) {
+   
+    .category {
+        display: none;
+    }
+}
